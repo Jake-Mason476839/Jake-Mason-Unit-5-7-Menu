@@ -741,7 +741,7 @@ MonoBehaviour:
   soundList:
   - name: MenuMusic
     clip: {fileID: 8300000, guid: 80905c44715f4c94dbacd107489596c2, type: 3}
-    volume: 0.8
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -750,7 +750,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ButtonSelect
     clip: {fileID: 8300000, guid: 61431ce3b603e3942b437569a44ae428, type: 3}
-    volume: 0.8
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -759,7 +759,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ButtonPress
     clip: {fileID: 8300000, guid: b3cecd4ad76acd34c872376a802e9a01, type: 3}
-    volume: 0.8
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: QuitMenu
     clip: {fileID: 8300000, guid: 8f45b1482e56e7f46b988c478ee8833b, type: 3}
-    volume: 0.8
+    volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
