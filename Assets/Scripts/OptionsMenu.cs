@@ -13,29 +13,29 @@ public class OptionsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
-    void start()
+    private void Start()
     {
+        int CurrentResolutionIndex = 0;
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
-        int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
-            options.Add(option);
+            string Option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(Option);
 
-            if (resolutions[i].width == Screen.currentResolution.width &&
-            resolutions[i].height == Screen.currentResolution.height)
+            if(resolutions[i].width == Screen.currentResolution.width &&
+                resolutions[i].height == Screen.currentResolution.height)
             {
-                currentResolutionIndex = i;
+                CurrentResolutionIndex = i;
             }
         }
 
         resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.value = CurrentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
     }
 
@@ -59,9 +59,14 @@ public class OptionsMenu : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
 
-    public void SetResolution (int resolutionIndex)
+    public void SetResolution(int ResolutionIndex)
     {
-        Resolution resolution = resolutions[resolutionIndex];
+        Resolution resolution = resolutions[ResolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    public void SetFullscreen (bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
     }
 }
