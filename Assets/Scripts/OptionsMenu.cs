@@ -30,11 +30,11 @@ public class OptionsMenu : MonoBehaviour
             if (resolutions[i].width == Screen.currentResolution.width &&
             resolutions[i].height == Screen.currentResolution.height)
             {
-                currentResolution = i;
+                currentResolutionIndex = i;
             }
         }
 
-        resolutionDropdown.Addoptions();
+        resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
     }

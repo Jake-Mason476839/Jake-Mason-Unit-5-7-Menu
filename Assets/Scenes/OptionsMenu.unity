@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 293937917}
   - component: {fileID: 293937916}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: ResolutionDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,13 +725,13 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 722542009}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 722542011}
+        m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
+        m_MethodName: SetResolution
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1151,7 +1151,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 2559371454940812665, guid: c62eaf3d9f2cd2d4e91dbbb4ee0e2751, type: 2}
   m_audioClip: {fileID: 8300000, guid: 80905c44715f4c94dbacd107489596c2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1743,6 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: c62eaf3d9f2cd2d4e91dbbb4ee0e2751, type: 2}
+  resolutionDropdown: {fileID: 293937916}
 --- !u!1 &725162074
 GameObject:
   m_ObjectHideFlags: 0
